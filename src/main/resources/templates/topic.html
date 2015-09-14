@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Topic List</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/2.3.0/css/bootstrap.min.css}"
+	rel="stylesheet" />
+</head>
+<body>
+
+	<form action="topicList.html" th:attr="action=@{/topiclist}">
+		<fieldset>
+			<input type="text" name="topic" /> 
+			<input type="submit" value="Topic To Search"  />
+		</fieldset>
+	</form>
+ 
+</body>
+</html>

@@ -1,0 +1,8 @@
+
+After starting as Spring Boot App
+
+call
+
+http://localhost:8080/greeting
+
+http://localhost:8080/greeting?name=Rene

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Topic List</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/2.3.0/css/bootstrap.min.css}"
+	rel="stylesheet" />
+</head>
+<body>
+	<table>
+		<tr>
+			<th>File Name</th>
+			<th>Content</th>
+		</tr>
+
+		<tr th:each="topicsource : ${topic_list}">
+			<td th:text="${topicsource.fileName}"></td>
+			 
+			<td>
+			    <table>
+			       <tr><td><text th:text="${topicsource.path}"></text></td></tr>
+			       <tr><td><textarea th:text="${topicsource.text}" cols="120" rows="20" name="topic-source-content"></textarea></td></tr>
+			    </table>			    
+            </td>
+		</tr>
+	</table>
+</body>
+</html>
